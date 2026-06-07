@@ -1,0 +1,58 @@
+{
+  "name": "vue-chronoflip",
+  "version": "0.0.2",
+  "type": "module",
+  "private": false,
+  "description": "A premium animated flip-clock countdown component for Vue 3",
+  "license": "MIT",
+  "author": "Hoang Hai Nguyen",
+  "homepage": "https://github.com/hoanghaing/vue-chronoflip#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoanghaing/vue-chronoflip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hoanghaing/vue-chronoflip/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "flip-clock",
+    "countdown",
+    "timer",
+    "component"
+  ],
+  "main": "./dist/vue-chronoflip.umd.cjs",
+  "module": "./dist/vue-chronoflip.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-chronoflip.js",
+      "require": "./dist/vue-chronoflip.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -p tsconfig.app.json --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "vue": "^3.5.24",
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.0",
+    "vue-tsc": "^3.1.4"
+  }
+}
